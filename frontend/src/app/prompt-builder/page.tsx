@@ -77,7 +77,7 @@ export default function PromptBuilder() {
 
               <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
                 Enter a thematic area (e.g., environment, public health,
-                technology) and generate an ENEM-style theme with supporting
+                technology) and generate an academic-style theme with supporting
                 texts and instructions.
               </p>
             </div>

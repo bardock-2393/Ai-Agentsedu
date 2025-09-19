@@ -110,7 +110,7 @@ export default function FeedbackBox({ data }: { data: EssayEvaluationResult }) {
         </div>
 
         <p className="text-white/70 text-lg">
-          Your essay was evaluated based on ENEM's 5 competencies
+          Your essay was evaluated based on academic writing's 5 competencies
         </p>
       </div>
 

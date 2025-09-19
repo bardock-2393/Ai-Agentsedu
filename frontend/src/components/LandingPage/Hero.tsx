@@ -31,7 +31,7 @@ const Hero = () => {
     {
       title: "Essay Evaluation AI Agent",
       description:
-        "Advanced AI agent that evaluates essays using ENEM criteria with detailed competency feedback",
+        "Advanced AI agent that evaluates essays using academic criteria with detailed competency feedback",
       icon: <FileText className="h-8 w-8 text-white" />,
       color: "from-violet-600 to-purple-600",
     },
@@ -65,11 +65,11 @@ const Hero = () => {
     },
   ];
 
-  const democratizationPoints = [
-    "Breaking barriers to quality education access in Brazil",
-    "AI-powered learning available 24/7 for all students",
-    "Personalized education regardless of socioeconomic background",
-    "Democratizing university entrance preparation with technology",
+  const academicBenefits = [
+    "Scalable personalized learning for large student populations",
+    "AI-powered assessment and feedback systems",
+    "Adaptive content delivery based on learning analytics",
+    "Automated tutoring and student support services",
   ];
 
   return (
@@ -85,41 +85,37 @@ const Hero = () => {
         >
           <div className="inline-flex items-center justify-center px-4 py-1.5 mb-4 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm shadow-md">
             <span className="text-xs sm:text-sm font-medium text-white/80">
-              🚀 Built with Google's Agent Development Kit (ADK) for Education
-              Democracy
+              🎓 Powered by Google's Agent Development Kit - Academic Innovation
             </span>
           </div>
 
           <div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-regular tracking-tighter select-none mt-4">
-              Democratizing Education in Brazil with
+              Transforming Higher Education with
             </h1>
             <br />
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-regular tracking-tighter select-none -mt-5">
               <GradientText className="mt-2 cursor-default font-bold select-none">
-                AI Agents
+                Intelligent AI Agents
               </GradientText>
             </h1>
           </div>
 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 max-w-4xl mx-auto">
             <h3 className="text-xl md:text-2xl font-semibold mb-3 text-white">
-              What is ENEM?
+              Educational AI Platform for Universities
             </h3>
             <p className="text-sm md:text-base text-white/80 leading-relaxed">
-              The <strong>National High School Exam (ENEM)</strong> is Brazil's
-              most important university entrance exam, taken by over 5 million
-              students annually. It determines access to higher education and
-              government funding. However, quality preparation is often
-              expensive and inaccessible to many students, creating educational
-              inequality.
+              This <strong>AI-powered educational platform</strong> demonstrates how universities can leverage 
+              Google's Agent Development Kit to create specialized AI agents for personalized learning. 
+              The platform showcases intelligent tutoring systems, automated assessment, and adaptive 
+              content generation - revolutionizing how institutions deliver education at scale.
             </p>
           </div>
 
           <p className="text-lg md:text-xl lg:text-2xl text-white/80 max-w-3xl font-light tracking-tight mx-auto leading-relaxed">
-            Our AI-powered platform uses Google's ADK to create intelligent
-            agents that provide personalized, high-quality ENEM preparation
-            accessible to every Brazilian student.
+            Experience how AI agents can transform university education through personalized learning paths, 
+            intelligent assessment, and adaptive content delivery systems.
           </p>
 
           {/* Democratization benefits */}
@@ -129,7 +125,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 max-w-4xl mx-auto"
           >
-            {democratizationPoints.map((point, index) => (
+            {academicBenefits.map((point, index) => (
               <div
                 key={index}
                 className="flex items-start gap-3 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm backdrop-blur-sm"
@@ -149,7 +145,7 @@ const Hero = () => {
         >
           <Link href="/dashboard">
             <Button className="button-primary text-lg font-medium flex items-center gap-2 group">
-              Try Our AI Agents
+              Explore AI Agents Demo
               <Zap className="w-5 h-5 transition-transform duration-200 group-hover:scale-110" />
             </Button>
           </Link>
@@ -163,16 +159,16 @@ const Hero = () => {
           className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-2xl mx-auto"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-1">5M+</div>
-            <div className="text-white/60 text-sm">ENEM Students Annually</div>
-          </div>
-          <div className="text-center">
             <div className="text-3xl font-bold text-white mb-1">8</div>
             <div className="text-white/60 text-sm">Specialized AI Agents</div>
           </div>
           <div className="text-center">
+            <div className="text-3xl font-bold text-white mb-1">100%</div>
+            <div className="text-white/60 text-sm">Automated Assessment</div>
+          </div>
+          <div className="text-center">
             <div className="text-3xl font-bold text-white mb-1">24/7</div>
-            <div className="text-white/60 text-sm">AI Tutoring Available</div>
+            <div className="text-white/60 text-sm">AI-Powered Learning</div>
           </div>
         </motion.div>
 
@@ -226,7 +222,7 @@ const Hero = () => {
           <Link href="/dashboard">
             <Button className="button-primary px-10 py-4 text-lg font-medium flex items-center gap-3 mx-auto group">
               <Users className="w-5 h-5" />
-              Start Learning with AI Agents
+              Experience the AI Platform Demo
               <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
           </Link>

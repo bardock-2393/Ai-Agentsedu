@@ -28,48 +28,48 @@ import {
 const Features = () => {
   const agents = [
     {
-      title: "📝 Essay Evaluator Agent",
+      title: "📝 Automated Essay Assessment",
       description:
-        "Advanced AI that evaluates essays using ENEM's 5 competencies: grammar, text comprehension, argumentation, coherence, and solution proposals. Provides detailed feedback and scores 0-1000.",
+        "Advanced AI that provides comprehensive essay evaluation using standardized academic criteria. Features automated scoring, detailed feedback generation, and competency-based assessment suitable for large-scale university applications.",
       icon: <FileText className="h-6 w-6" />,
       features: [
-        "Automatic ENEM-style essay correction",
-        "Competency-based feedback",
-        "Improvement suggestions with examples",
-        "Score justification and explanations",
+        "Automated academic writing assessment",
+        "Multi-criteria evaluation system",
+        "Detailed feedback generation",
+        "Scalable for large student populations",
       ],
       color: "from-white to-white",
     },
     {
-      title: "📚 Prompt Builder Agent",
+      title: "📚 Intelligent Content Generator",
       description:
-        "Generates ENEM essay topics with contextualization and supporting texts. Creates prompts aligned with current affairs and social themes for authentic practice.",
+        "AI-powered system that generates academic prompts, assignments, and assessment materials. Creates contextually relevant content aligned with curriculum standards and learning objectives.",
       icon: <PenTool className="h-6 w-6" />,
       features: [
-        "Current affairs-aligned essay topics",
-        "Supporting text collections",
-        "Theme contextualization",
-        "Social issue prompts",
+        "Curriculum-aligned content generation",
+        "Academic prompt creation",
+        "Assessment material design",
+        "Multi-format content support",
       ],
       color: "from-white to-white",
     },
     {
-      title: "🧪 Simulated Exam Agent",
+      title: "🧪 Adaptive Assessment System",
       description:
-        "Creates personalized practice exams by subject area, difficulty, or specific topics. Supports all ENEM areas: Languages, Math, Human Sciences, and Natural Sciences.",
+        "Intelligent examination platform that creates personalized assessments based on learning analytics. Adapts difficulty and content to individual student performance and learning objectives.",
       icon: <BookOpen className="h-6 w-6" />,
       features: [
-        "Subject-specific exam generation",
-        "Difficulty-adapted questions",
-        "Timed or free practice modes",
-        "Immediate correction with explanations",
+        "Adaptive difficulty algorithms",
+        "Multi-subject integration",
+        "Real-time performance analytics",
+        "Comprehensive feedback systems",
       ],
       color: "from-white to-white",
     },
     {
-      title: "🧩 Interdisciplinary Agent",
+      title: "🧩 Cross-Curricular Learning System",
       description:
-        "Generates complex questions that connect multiple subject areas in a single problem, mimicking ENEM's interdisciplinary approach and real-world applications.",
+        "Advanced AI that creates interdisciplinary learning experiences, connecting multiple academic domains to promote holistic understanding and critical thinking skills.",
       icon: <Target className="h-6 w-6" />,
       features: [
         "Multi-subject connected questions",
@@ -147,14 +147,14 @@ const Features = () => {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6">
             Eight Specialized <span className="text-white">AI Agents</span>
             <br />
-            for Complete ENEM Preparation
+            for Complete Academic Support
           </h2>
 
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
             Each agent is designed with specific expertise to provide
             comprehensive, personalized education that adapts to every student's
-            unique learning needs and democratizes access to quality ENEM
-            preparation.
+            unique learning needs and democratizes access to quality academic
+            education.
           </p>
         </div>
 
@@ -224,8 +224,8 @@ const Features = () => {
             <p className="text-white/70 text-lg leading-relaxed mb-6">
               Our AI agents work together to provide the same quality of
               education that expensive prep courses offer, but accessible to
-              every Brazilian student. No matter your background, location, or
-              economic situation - quality ENEM preparation is now within reach.
+              every student globally. No matter your background, location, or
+              economic situation - quality academic education is now within reach.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

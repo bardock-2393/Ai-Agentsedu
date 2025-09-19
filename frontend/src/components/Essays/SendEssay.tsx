@@ -113,13 +113,13 @@ export default function SendEssay() {
                 </div>
 
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-white">
-                  ENEM Essay
+                  Academic Essay
                   <br />
                   <span className="gradient-text">AI Evaluation</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-                  Get detailed feedback on your ENEM essay with AI-powered
+                  Get detailed feedback on your academic essay with AI-powered
                   analysis across all 5 competencies. Upload an image or paste
                   your text to start.
                 </p>

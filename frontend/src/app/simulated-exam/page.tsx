@@ -266,7 +266,7 @@ export default function SimulatedExam() {
                 <div className="inline-flex items-center justify-center px-4 py-2 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
                   <Target className="w-4 h-4 mr-2 text-purple-400" />
                   <span className="text-sm font-medium text-white/80">
-                    ENEM Simulated Exam
+                    Adaptive Academic Assessment
                   </span>
                 </div>
 

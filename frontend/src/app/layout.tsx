@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Edu.AI",
-  description: "Get ready for ENEM",
+  description: "AI-Powered Educational Platform Demo",
 };
 
 export default function RootLayout({

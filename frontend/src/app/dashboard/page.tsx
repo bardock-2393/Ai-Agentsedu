@@ -34,47 +34,47 @@ import BackgroundBlur from "@/components/ui/background-blur";
 export default function Dashboard() {
   const agents = [
     {
-      title: "Essay Evaluator",
+      title: "Automated Essay Assessment",
       description:
-        "Get detailed feedback on your ENEM essays with AI-powered analysis across all 5 competencies.",
+        "Experience AI-powered essay evaluation with detailed feedback, scoring, and improvement suggestions for academic writing.",
       icon: <FileText className="h-8 w-8 text-white" />,
       href: "/essay-evaluator",
       color: "from-violet-600 to-purple-600",
       features: [
-        "Competency-based scoring",
-        "Detailed feedback",
-        "Improvement suggestions",
+        "Automated scoring system",
+        "Comprehensive feedback",
+        "Academic writing analysis",
       ],
       status: "Ready",
     },
     {
-      title: "Simulated Exam",
+      title: "Adaptive Assessment",
       description:
-        "Practice with personalized ENEM-style questions adapted to your learning level and subject preferences.",
+        "Intelligent examination system that creates personalized tests based on individual learning analytics and performance data.",
       icon: <BookOpen className="h-8 w-8 text-white" />,
       href: "/simulated-exam",
       color: "from-blue-600 to-indigo-600",
-      features: ["Adaptive difficulty", "All ENEM subjects", "Timed practice"],
+      features: ["Adaptive algorithms", "Multi-subject support", "Performance tracking"],
       status: "Ready",
     },
     {
-      title: "Prompt Builder",
+      title: "Content Generator",
       description:
-        "Generate authentic ENEM essay topics with supporting materials and contextual information.",
+        "AI-powered system for creating academic prompts, assignments, and educational materials aligned with curriculum standards.",
       icon: <PenTool className="h-8 w-8 text-white" />,
       href: "/prompt-builder",
       color: "from-green-600 to-emerald-600",
       features: [
-        "Current affairs topics",
-        "Supporting texts",
-        "Theme contextualization",
+        "Curriculum alignment",
+        "Academic content creation",
+        "Multi-format materials",
       ],
       status: "Ready",
     },
     {
       title: "Interdisciplinary Questions",
       description:
-        "Challenge yourself with complex questions that connect multiple subjects, just like real ENEM.",
+        "Challenge yourself with complex questions that connect multiple subjects, just like real academic assessments.",
       icon: <Target className="h-8 w-8 text-white" />,
       href: "/interdisciplinary-questions",
       color: "from-orange-600 to-red-600",
@@ -130,7 +130,7 @@ export default function Dashboard() {
     {
       title: "Progress Tracker",
       description:
-        "Monitor your ENEM preparation journey with detailed analytics and performance insights.",
+        "Monitor your academic progress journey with detailed analytics and performance insights.",
       icon: <BarChart3 className="h-8 w-8 text-white" />,
       href: "/progress-tracker",
       color: "from-indigo-600 to-purple-700",
@@ -157,15 +157,15 @@ export default function Dashboard() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-white">
-            Your AI-Powered
+            AI-Powered Education
             <br />
-            <span className="text-white">ENEM Dashboard</span>
+            <span className="text-white">Platform Demo</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-8">
-            Access all 8 specialized AI agents designed to democratize quality
-            ENEM preparation. Each agent works together to provide personalized,
-            comprehensive learning support.
+            Explore 8 specialized AI agents that demonstrate how universities can leverage 
+            artificial intelligence for personalized learning, automated assessment, and 
+            intelligent tutoring systems.
           </p>
         </div>
 
@@ -243,27 +243,26 @@ export default function Dashboard() {
         <div className="text-center">
           <div className="glass-card p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              🚀 Ready to Transform Your ENEM Preparation?
+              🎓 Experience the Future of University Education
             </h3>
             <p className="text-white/70 text-lg leading-relaxed mb-6">
-              These AI agents work together to provide comprehensive,
-              personalized education that adapts to your unique learning needs.
-              Start with any agent and experience the future of democratized
-              education.
+              These AI agents demonstrate how universities can transform education 
+              through intelligent systems. Explore automated assessment, personalized 
+              learning paths, and adaptive content delivery at scale.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/essay-evaluator">
                 <Button className="button-primary px-8 py-4 text-lg flex items-center gap-3">
                   <Star className="w-5 h-5" />
-                  Start with Essay Evaluator
+                  Try Essay Assessment Demo
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
               <Link href="/personal-tutor">
                 <Button className="button-secondary">
                   <Users className="w-5 h-5 mr-2" />
-                  Get Personal Recommendations
+                  Explore AI Tutoring System
                 </Button>
               </Link>
             </div>

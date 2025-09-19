@@ -39,7 +39,7 @@ const HowItWorks = () => {
       number: "03",
       title: "Get Instant Feedback",
       description:
-        "Receive detailed ENEM-aligned feedback, practice materials, and improvement suggestions. All powered by AI that understands Brazilian education standards.",
+        "Receive detailed academic feedback, practice materials, and improvement suggestions. All powered by AI that understands global education standards.",
       icon: <FileText className="w-6 h-6 text-white" />,
       agents: ["Essay Evaluator", "Rephraser", "Prompt Builder"],
       color: "from-white to-white",
@@ -48,7 +48,7 @@ const HowItWorks = () => {
       number: "04",
       title: "Track Your Progress",
       description:
-        "Monitor your improvement across all ENEM competencies with intelligent analytics. The Progress Tracker Agent provides insights that adapt your learning journey.",
+        "Monitor your improvement across all academic competencies with intelligent analytics. The Progress Tracker Agent provides insights that adapt your learning journey.",
       icon: <BarChart3 className="w-6 h-6 text-white" />,
       agents: ["Progress Tracker", "Personal Tutor"],
       color: "from-white to-white",
@@ -69,12 +69,12 @@ const HowItWorks = () => {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6">
             How Our <span className="gradient-text">AI Agents</span>
             <br />
-            Transform ENEM Learning
+            Transform Academic Learning
           </h2>
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
             Experience the power of Google's Agent Development Kit as our
             specialized AI agents work together to democratize quality education
-            for every Brazilian student.
+            for every student globally.
           </p>
         </div>
 
@@ -133,14 +133,14 @@ const HowItWorks = () => {
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center justify-center gap-2">
               <Globe className="w-6 h-6 text-white" />
-              Breaking Educational Barriers in Brazil
+              Breaking Educational Barriers Globally
             </h3>
             <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
-              In a country where quality ENEM preparation can cost thousands of
-              reais, our AI agents provide the same level of personalized
-              education for free. We're not just building technology - we're
-              democratizing access to higher education for 5+ million Brazilian
-              students.
+              In a world where quality academic preparation can cost thousands,
+              our AI agents provide the same level of personalized
+              education at scale. We're not just building technology - we're
+              democratizing access to higher education for millions of
+              students globally.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -162,7 +162,7 @@ const HowItWorks = () => {
               <Link href="/dashboard">
                 <Button className="button-primary px-8 py-4 text-lg flex items-center gap-3">
                   <Target className="w-5 h-5" />
-                  Start Your ENEM Journey
+                  Start Your Academic Journey
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>

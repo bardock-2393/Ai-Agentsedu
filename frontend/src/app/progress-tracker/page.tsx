@@ -61,7 +61,16 @@ export default function ProgressTracker() {
       );
       const response = await ApiService.runAgent(payload);
       const parsed = parseADKResponse<Progress>(response.response);
-      setData(parsed);
+      
+      // Ensure all required properties exist with default values
+      const safeData: Progress = {
+        essays: parsed?.essays || [],
+        practice_exams: parsed?.practice_exams || [],
+        average_by_area: parsed?.average_by_area || {},
+        recommendations: parsed?.recommendations || []
+      };
+      
+      setData(safeData);
     } catch (e) {
       console.error("Error loading progress", e);
       alert("Something went wrong.");
@@ -178,7 +187,7 @@ export default function ProgressTracker() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    {data.essays.length > 0 ? (
+                    {data.essays && data.essays.length > 0 ? (
                       <ul className="text-white/80 space-y-3">
                         {data.essays.map((e, i) => (
                           <li
@@ -223,7 +232,7 @@ export default function ProgressTracker() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    {data.recommendations.length > 0 ? (
+                    {data.recommendations && data.recommendations.length > 0 ? (
                       <ul className="grid gap-3">
                         {data.recommendations.map((r, i) => (
                           <li
