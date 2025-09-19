@@ -12,9 +12,9 @@ export default function Flashcard({ question, answer }: FlashcardProps) {
 
   return (
     <div
-      className="relative h-48 cursor-pointer"
+      className="relative h-48 cursor-pointer perspective-1000"
       onClick={() => setIsFlipped(!isFlipped)}
-      style={{ perspective: "1000px" }}
+      style={{}}
     >
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${

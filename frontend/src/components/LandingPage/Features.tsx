@@ -38,7 +38,7 @@ const Features = () => {
         "Improvement suggestions with examples",
         "Score justification and explanations",
       ],
-      color: "from-violet-600 to-purple-600",
+      color: "from-white to-white",
     },
     {
       title: "📚 Prompt Builder Agent",
@@ -51,7 +51,7 @@ const Features = () => {
         "Theme contextualization",
         "Social issue prompts",
       ],
-      color: "from-blue-600 to-indigo-600",
+      color: "from-white to-white",
     },
     {
       title: "🧪 Simulated Exam Agent",
@@ -64,7 +64,7 @@ const Features = () => {
         "Timed or free practice modes",
         "Immediate correction with explanations",
       ],
-      color: "from-green-600 to-emerald-600",
+      color: "from-white to-white",
     },
     {
       title: "🧩 Interdisciplinary Agent",
@@ -77,7 +77,7 @@ const Features = () => {
         "Cross-curricular learning",
         "Comprehensive understanding tests",
       ],
-      color: "from-orange-600 to-red-600",
+      color: "from-white to-white",
     },
     {
       title: "🧭 Personal Tutor Agent",
@@ -90,7 +90,7 @@ const Features = () => {
         "Learning gap identification",
         "Personalized agent orchestration",
       ],
-      color: "from-cyan-600 to-blue-700",
+      color: "from-white to-white",
     },
     {
       title: "🎥 Content Generator Agent",
@@ -103,7 +103,7 @@ const Features = () => {
         "Interactive flashcards",
         "Personalized explanations",
       ],
-      color: "from-pink-600 to-purple-700",
+      color: "from-white to-white",
     },
     {
       title: "🗣️ Rephraser Agent",
@@ -116,7 +116,7 @@ const Features = () => {
         "Grammar and structure fixes",
         "Technique explanations",
       ],
-      color: "from-teal-600 to-cyan-600",
+      color: "from-white to-white",
     },
     {
       title: "📈 Progress Tracker Agent",
@@ -129,7 +129,7 @@ const Features = () => {
         "Progress visualization",
         "Exportable reports",
       ],
-      color: "from-indigo-600 to-purple-700",
+      color: "from-white to-white",
     },
   ];
 
@@ -138,14 +138,14 @@ const Features = () => {
       <div className="px-4 md:px-6">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <div className="inline-flex items-center justify-center px-4 py-2 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
-            <Bot className="w-4 h-4 mr-2 text-blue-400" />
+            <Bot className="w-4 h-4 mr-2 text-white" />
             <span className="text-sm font-medium text-white/80">
               Built with Google's Agent Development Kit
             </span>
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6">
-            Eight Specialized <span className="gradient-text">AI Agents</span>
+            Eight Specialized <span className="text-white">AI Agents</span>
             <br />
             for Complete ENEM Preparation
           </h2>
@@ -161,15 +161,11 @@ const Features = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto mb-12">
           {agents.map((agent, index) => (
             <div key={index} className="group relative">
-              <div
-                className={`absolute -inset-0.5 bg-gradient-to-r ${agent.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300 rounded-2xl blur-sm`}
-              ></div>
-
-              <Card className="relative h-full bg-black/40 border-white/10 hover:border-white/20 transition-all duration-300 backdrop-blur-sm group-hover:transform group-hover:scale-[1.02]">
+              <Card className="relative h-full bg-black border-white/15 hover:border-white/25 transition-all duration-300 group-hover:transform group-hover:scale-[1.02] shadow-none">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div
-                      className={`w-12 h-12 rounded-xl bg-gradient-to-r ${agent.color} flex items-center justify-center shadow-lg`}
+                      className={`w-12 h-12 rounded-xl bg-black border border-white/20 flex items-center justify-center`}
                     >
                       <div className="text-white">{agent.icon}</div>
                     </div>
@@ -196,7 +192,7 @@ const Features = () => {
                           key={idx}
                           className="flex items-center gap-2 text-white/60 text-sm"
                         >
-                          <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                          <div className="w-1.5 h-1.5 rounded-full bg-white/50"></div>
                           {feature}
                         </li>
                       ))}

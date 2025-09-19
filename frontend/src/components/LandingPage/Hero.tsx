@@ -84,7 +84,7 @@ const Hero = () => {
           className="space-y-6"
         >
           <div className="inline-flex items-center justify-center px-4 py-1.5 mb-4 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm shadow-md">
-            <span className="text-xs sm:text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+            <span className="text-xs sm:text-sm font-medium text-white/80">
               🚀 Built with Google's Agent Development Kit (ADK) for Education
               Democracy
             </span>
@@ -96,12 +96,7 @@ const Hero = () => {
             </h1>
             <br />
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-regular tracking-tighter select-none -mt-5">
-              <GradientText
-                colors={["#7040ff", "#9c40ff", "#5640ff", "#4079ff", "#ff40b3"]}
-                animationSpeed={8}
-                showBorder={false}
-                className="mt-2 cursor-default font-bold select-none"
-              >
+              <GradientText className="mt-2 cursor-default font-bold select-none">
                 AI Agents
               </GradientText>
             </h1>
@@ -189,11 +184,10 @@ const Hero = () => {
           className="w-full max-w-6xl mx-auto mt-12 relative"
         >
           <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
-            Powered by{" "}
-            <span className="gradient-text">Specialized AI Agents</span>
+            Powered by <span className="text-white">Specialized AI Agents</span>
           </h3>
 
-          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-purple-600/20 to-pink-600/20 blur-xl opacity-70"></div>
+          <div className="absolute -inset-1 rounded-2xl bg-white/5 blur-xl opacity-30"></div>
 
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
@@ -204,11 +198,11 @@ const Hero = () => {
                 >
                   <div className="h-full p-6 md:p-8 flex flex-col items-center justify-center text-center space-y-4 rounded-2xl backdrop-blur-xl border border-white/10 bg-black/40 hover:bg-black/50 hover:border-white/20 transition-all duration-300 shadow-xl">
                     <div
-                      className={`w-20 h-20 bg-gradient-to-r ${feature.color} rounded-full flex items-center justify-center shadow-xl transition-transform duration-300 hover:scale-110`}
+                      className={`w-20 h-20 bg-white/10 rounded-full flex items-center justify-center shadow-xl transition-transform duration-300 hover:scale-110`}
                     >
                       {feature.icon}
                     </div>
-                    <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r tracking-tighter from-white to-gray-300">
+                    <h3 className="text-xl md:text-2xl font-semibold text-white tracking-tighter">
                       {feature.title}
                     </h3>
                     <p className="text-sm text-gray-300">

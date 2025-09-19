@@ -74,12 +74,13 @@ export default function ProgressTracker() {
     if (userId) fetchProgress();
   }, [userId]);
 
+  const averages = data?.average_by_area ?? {};
   const chartData = {
-    labels: data ? Object.keys(data.average_by_area) : [],
+    labels: Object.keys(averages),
     datasets: [
       {
         label: "Average Score",
-        data: data ? Object.values(data.average_by_area) : [],
+        data: Object.keys(averages).map((k) => (averages as any)[k] ?? 0),
         backgroundColor: "rgba(99, 102, 241, 0.6)",
         borderRadius: 8,
       },

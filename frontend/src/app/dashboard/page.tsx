@@ -150,7 +150,7 @@ export default function Dashboard() {
         <BackgroundBlur />
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center px-4 py-2 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
-            <Globe className="w-4 h-4 mr-2 text-blue-400" />
+            <Globe className="w-4 h-4 mr-2 text-white" />
             <span className="text-sm font-medium text-white/80">
               Powered by Google's Agent Development Kit
             </span>
@@ -159,7 +159,7 @@ export default function Dashboard() {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-white">
             Your AI-Powered
             <br />
-            <span className="gradient-text">ENEM Dashboard</span>
+            <span className="text-white">ENEM Dashboard</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed mb-8">
@@ -172,22 +172,18 @@ export default function Dashboard() {
         {/* AI Agents Grid */}
         <div className="mb-12 px-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            Choose Your <span className="gradient-text">AI Agent</span>
+            Choose Your <span className="text-white">AI Agent</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {agents.map((agent, index) => (
               <Link key={index} href={agent.href}>
                 <div className="group relative h-full">
-                  <div
-                    className={`absolute -inset-0.5 bg-gradient-to-r ${agent.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300 rounded-2xl blur-sm`}
-                  ></div>
-
-                  <Card className="relative h-full bg-black/40 border-white/10 hover:border-white/20 transition-all duration-300 backdrop-blur-sm group-hover:transform group-hover:scale-105 cursor-pointer">
+                  <Card className="relative h-full bg-black border-white/15 hover:border-white/25 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer shadow-none">
                     <CardHeader className="pb-4">
                       <div className="flex items-start justify-between">
                         <div
-                          className={`w-14 h-14 rounded-xl bg-gradient-to-r ${agent.color} flex items-center justify-center shadow-lg mb-4`}
+                          className={`w-14 h-14 rounded-xl bg-black border border-white/20 flex items-center justify-center mb-4`}
                         >
                           {agent.icon}
                         </div>
@@ -219,7 +215,7 @@ export default function Dashboard() {
                               key={idx}
                               className="flex items-center gap-2 text-white/60 text-xs"
                             >
-                              <div className="w-1 h-1 rounded-full bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                              <div className="w-1 h-1 rounded-full bg-white/50"></div>
                               {feature}
                             </li>
                           ))}

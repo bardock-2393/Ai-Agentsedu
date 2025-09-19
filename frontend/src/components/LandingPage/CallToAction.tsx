@@ -21,9 +21,7 @@ import {
 const CallToAction = () => {
   return (
     <section className="w-full py-16 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-pink-900/20"></div>
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
 
       <div className="px-4 md:px-6 relative">
         <div className="glass-card max-w-7xl mx-auto p-8 md:p-12">
@@ -82,12 +80,12 @@ const CallToAction = () => {
             </div>
 
             {/* Agent showcase cards */}
-            <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
               {/* Agent card 1 */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl relative overflow-hidden group hover:border-white/20 transition-all hover:transform hover:scale-105">
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
+                <div className="absolute -inset-1 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-4 mx-auto">
+                  <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-4 mx-auto">
                     <FileText className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
@@ -111,9 +109,9 @@ const CallToAction = () => {
 
               {/* Agent card 2 */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl relative overflow-hidden group hover:border-white/20 transition-all hover:transform hover:scale-105">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
+                <div className="absolute -inset-1 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center mb-4 mx-auto">
+                  <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-4 mx-auto">
                     <Brain className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
@@ -137,9 +135,9 @@ const CallToAction = () => {
 
               {/* Agent card 3 */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl relative overflow-hidden group hover:border-white/20 transition-all hover:transform hover:scale-105">
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-600/20 to-emerald-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
+                <div className="absolute -inset-1 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-green-600 to-emerald-600 flex items-center justify-center mb-4 mx-auto">
+                  <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-4 mx-auto">
                     <BookOpen className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
@@ -163,9 +161,9 @@ const CallToAction = () => {
 
               {/* Agent card 4 */}
               <div className="bg-black/40 backdrop-blur-md border border-white/10 p-6 rounded-2xl relative overflow-hidden group hover:border-white/20 transition-all hover:transform hover:scale-105">
-                <div className="absolute -inset-1 bg-gradient-to-r from-amber-600/20 to-orange-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
+                <div className="absolute -inset-1 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-all blur-xl"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-amber-600 to-orange-600 flex items-center justify-center mb-4 mx-auto">
+                  <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-4 mx-auto">
                     <TrendingUp className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">

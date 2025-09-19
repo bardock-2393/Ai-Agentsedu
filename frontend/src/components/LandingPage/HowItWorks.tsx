@@ -12,6 +12,7 @@ import {
   BookOpen,
   FileText,
   Brain,
+  Globe,
 } from "lucide-react";
 
 const HowItWorks = () => {
@@ -23,7 +24,7 @@ const HowItWorks = () => {
         "Submit essays, take practice exams, or ask questions. Our multi-modal agents can process text, images, and voice inputs for maximum accessibility.",
       icon: <Upload className="w-6 h-6 text-white" />,
       agents: ["Essay Evaluator", "Image Processing"],
-      color: "from-blue-600 to-indigo-600",
+      color: "from-white to-white",
     },
     {
       number: "02",
@@ -32,7 +33,7 @@ const HowItWorks = () => {
         "Multiple specialized agents work together using Google's ADK - analyzing, generating content, and creating personalized learning paths tailored to your needs.",
       icon: <Bot className="w-6 h-6 text-white" />,
       agents: ["Personal Tutor", "Content Generator", "Analyzer"],
-      color: "from-purple-600 to-pink-600",
+      color: "from-white to-white",
     },
     {
       number: "03",
@@ -41,7 +42,7 @@ const HowItWorks = () => {
         "Receive detailed ENEM-aligned feedback, practice materials, and improvement suggestions. All powered by AI that understands Brazilian education standards.",
       icon: <FileText className="w-6 h-6 text-white" />,
       agents: ["Essay Evaluator", "Rephraser", "Prompt Builder"],
-      color: "from-green-600 to-emerald-600",
+      color: "from-white to-white",
     },
     {
       number: "04",
@@ -50,7 +51,7 @@ const HowItWorks = () => {
         "Monitor your improvement across all ENEM competencies with intelligent analytics. The Progress Tracker Agent provides insights that adapt your learning journey.",
       icon: <BarChart3 className="w-6 h-6 text-white" />,
       agents: ["Progress Tracker", "Personal Tutor"],
-      color: "from-orange-600 to-red-600",
+      color: "from-white to-white",
     },
   ];
 
@@ -59,7 +60,7 @@ const HowItWorks = () => {
       <div className="px-4 md:px-6">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <div className="inline-flex items-center justify-center px-4 py-2 mb-6 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
-            <Brain className="w-4 h-4 mr-2 text-purple-400" />
+            <Brain className="w-4 h-4 mr-2 text-white" />
             <span className="text-sm font-medium text-white/80">
               Intelligent Agent Orchestration
             </span>
@@ -81,13 +82,13 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={index} className="group relative">
               <div
-                className={`absolute -inset-0.5 bg-gradient-to-r ${step.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300 rounded-2xl blur-sm`}
+                className={`absolute -inset-0.5 bg-white/10 opacity-20 group-hover:opacity-40 transition-opacity duration-300 rounded-2xl blur-sm`}
               ></div>
 
-              <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-all duration-300 group-hover:transform group-hover:scale-[1.02] min-h-72">
+              <div className="relative bg-black border border-white/15 rounded-2xl p-8 hover:border-white/25 transition-all duration-300 group-hover:transform group-hover:scale-[1.02] min-h-72">
                 <div className="flex items-start gap-6">
                   <div
-                    className={`w-16 h-16 rounded-xl bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg`}
+                    className={`w-16 h-16 rounded-xl bg-black border border-white/20 flex items-center justify-center`}
                   >
                     {step.icon}
                   </div>
@@ -112,10 +113,10 @@ const HowItWorks = () => {
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {step.agents.map((agent, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs text-white/80"
-                          >
+                        <span
+                          key={idx}
+                          className="px-3 py-1 bg-black border border-white/25 rounded-full text-xs text-white/80"
+                        >
                             {agent}
                           </span>
                         ))}
@@ -129,9 +130,10 @@ const HowItWorks = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              🌍 Breaking Educational Barriers in Brazil
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 flex items-center justify-center gap-2">
+              <Globe className="w-6 h-6 text-white" />
+              Breaking Educational Barriers in Brazil
             </h3>
             <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
               In a country where quality ENEM preparation can cost thousands of
