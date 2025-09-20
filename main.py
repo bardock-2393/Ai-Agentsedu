@@ -29,38 +29,53 @@ app = FastAPI()
 # === SETUP CORS ===
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:7777",
+        "http://127.0.0.1:7777", 
+        "http://13.204.21.149:7777",
+        "https://13.204.21.149:7777",
+        "*"  # Allow all origins as fallback
+    ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
 # === ROUTES ===
+@app.options("/{full_path:path}")
+async def options_handler():
+    """Handle CORS preflight requests"""
+    return {"message": "OK"}
+
 @app.post("/run")
 async def run_agent(payload: dict):
-    user_id = payload["user_id"]
-    session_id = payload["session_id"]
-    message = payload["new_message"]
-    print("Payload: ", payload)
+    try:
+        user_id = payload["user_id"]
+        session_id = payload["session_id"]
+        message = payload["new_message"]
+        print("Payload: ", payload)
 
-    content = types.Content(
-        role=message["role"],
-        parts=[types.Part(**part) for part in message["parts"]]
-    )
+        content = types.Content(
+            role=message["role"],
+            parts=[types.Part(**part) for part in message["parts"]]
+        )
 
-    response = None
-    async for event in runner.run_async(
-        user_id=user_id,
-        session_id=session_id,
-        new_message=content
-    ):
-        if event.is_final_response() and event.content and event.content.parts:
-            response = event.content.parts[0].text
+        response = None
+        async for event in runner.run_async(
+            user_id=user_id,
+            session_id=session_id,
+            new_message=content
+        ):
+            if event.is_final_response() and event.content and event.content.parts:
+                response = event.content.parts[0].text
 
-    print(f"Response: {response}")
-    return {
-        "response": response
-    }
+        print(f"Response: {response}")
+        return {
+            "response": response
+        }
+    except Exception as e:
+        print(f"Error in run_agent: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 @app.post("/initiate-session/{user_id}")
 async def create_session(user_id: str):
