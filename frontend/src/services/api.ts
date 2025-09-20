@@ -1,6 +1,6 @@
 import { RunPayload } from "@/types";
 
-const BASE_API_URL = "http://localhost:8888";
+const BASE_API_URL = "http://13.204.21.149:8888";
 const APP_NAME = "orchestrator_agent";
 
 export class ApiService {
